@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      .poppins {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
@@ -15,8 +22,70 @@
   </head>
 
   <body>
-    <header>
-      <section id="nav"></section>
+    <header class="bg-[#264653] p-4">
+      <section id="nav">
+        <nav>
+          <div class="flex justify-end lg:hidden">
+            <img class="w-10" src="images/icons/menu-2 1.png" alt="meny" />
+          </div>
+          <div class="flex hidden lg:flex lg:justify-end px-16 items-center">
+            <ul class="flex px-5 text-[#ffff]">
+              <a class="px-4 poppins font-medium" href=""> <li>Home</li> </a
+              ><a class="px-4 poppins font-medium" href=""> <li>Shop</li> </a
+              ><a class="px-4 poppins font-medium" href=""> <li>News</li> </a
+              ><a class="px-4 poppins font-medium" href="">
+                <li>Contact</li>
+              </a>
+            </ul>
+            <button
+              class="px-6 btn btn-success bg-[#E76F51] font-medium text-[#fff] poppins"
+            >
+              Login
+            </button>
+          </div>
+        </nav>
+      </section>
+      <section
+        id="banner"
+        class="flex flex-col text-start py-6 lg:flex lg:justify-between lg:flex-row lg:items-center lg:p-35"
+      >
+        <div class="py-12 lg:w-120">
+          <p
+            class="text-[#fff] text-[1rem] leading-[1.5rem] poppins font-light py-2"
+          >
+            Computer-controlled digital transistorized with electronic advance
+          </p>
+          <h3 class="text-[2.25rem] text-[#fff] poppins font-semibold py-2">
+            Honda CBR 300R
+          </h3>
+          <p
+            class="text-[#fff] text-[1rem] leading-[1.5rem] poppins font-light py-4"
+          >
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button
+            class="px-6 btn btn-success bg-[#E76F51] font-medium text-[#fff] poppins py-2 border-none"
+          >
+            Purchase
+          </button>
+        </div>
+        <div class="lg:w-100 flex">
+          <img
+            class="relative hidden lg:flex"
+            src="images/others/Group 33068.png"
+            alt=""
+            style="bottom: 55px; left: 300px"
+          />
+          <img
+            class="h-200 w-100 lg:absolute"
+            src="images/others/honda-cbr-300r-2-removebg-preview 1.png"
+            alt=""
+            style="top: 150px"
+          />
+        </div>
+      </section>
     </header>
   </body>
 </html>
